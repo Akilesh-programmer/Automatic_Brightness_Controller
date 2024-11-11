@@ -24,9 +24,9 @@ previous_percentage_decreased = None
 
 while True:
     current_brightness = sbc.get_brightness()
-    pyautogui.screenshot("E:\\Hackathon_Project\\Automatic_Brightness_Controller\\screenshot.png")
+    pyautogui.screenshot("./screenshot/screenshot.png")
 
-    image = Image.open("E:\\Hackathon_Project\\Automatic_Brightness_Controller\\screenshot.png")
+    image = Image.open("./screenshot/screenshot.png")
     dominant_color = get_dominant_color(image)
     current_intensity = calculate_intensity(dominant_color[0], dominant_color[1], dominant_color[2])
 
